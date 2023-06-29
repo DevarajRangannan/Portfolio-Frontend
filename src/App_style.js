@@ -1,0 +1,1 @@
+export const CONTAINER = "text-5xl font-bold text-red-500"
