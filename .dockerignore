@@ -1,0 +1,7 @@
+.git
+.gitignore
+deployment.yaml
+dockerfile
+.dockerignore
+README.md
+.env
