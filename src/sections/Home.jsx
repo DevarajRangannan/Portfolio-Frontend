@@ -1,12 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { CONTAINER, md_CONTAINER, MAIN_SECTION, md_MAIN_SECTION, PROFILE, md_PROFILE, TEXT_CONTAINER , md_TEXT_CONTAINER, NAME, md_NAME, DOAMIN, md_DOAMIN, RESUME_BTN, md_RESUME_BTN, WAVE, md_WAVE} from './styles/Home'
 import axios from 'axios'
 import profile from "../asserts/profile.png"
 
-
+const URL = process.env.REACT_APP_METADATA_RESUME
 
 export default function Home() {
-  const URL = process.env.REACT_APP_METADATA_RESUME
 
   const [resumeURL, setresumeURL] = useState("")
   
@@ -15,7 +14,6 @@ export default function Home() {
       const response = await axios.get(URL);
       const data = await response.data
       setresumeURL(data.URL)
-      console.log(data.URL);
     }
     catch(e){
       console.log(e);
@@ -23,7 +21,10 @@ export default function Home() {
 
   }
 
-  getData()
+  useEffect(()=>{
+    getData()
+  },[])
+
 
 
   return (
