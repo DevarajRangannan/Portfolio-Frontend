@@ -1,5 +1,5 @@
 # DevarajRangannan Portfolio-Frontend
-  This Portfolio-Frontend Web Application Purely Developded With `ReactJs`.
+  This Portfolio-Frontend Web Application Purely Developed With `ReactJs`.
   
 ![Portfolio_home](https://deva-rangan-test.s3.ap-south-1.amazonaws.com/Portfolio_home.png)
 
