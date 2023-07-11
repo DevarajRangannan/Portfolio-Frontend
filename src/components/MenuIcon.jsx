@@ -1,5 +1,5 @@
 import React from 'react'
-import {menu} from "./styles/menu_icon-style"
+import {menu} from "./styles/MenuIcon"
 import {useSelector, useDispatch} from 'react-redux'
 import {Act_sideNavBar} from "../redux/actions/side_nav"
 import {ReactComponent as MenuIcon} from "../asserts/menu.svg"

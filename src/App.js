@@ -1,13 +1,9 @@
 import React from 'react';
-import MenuIcon from "./components/MenuIcon";
-import Nav from "./components/Nav";
-import Home from "./sections/Home"
-import Skills from "./sections/Skills"
-import Projects from "./sections/Projects"
-import Education from "./sections/Education"
-import Contact from "./sections/Contact"
 import { useDispatch } from 'react-redux';
 import { Act_Current_Section } from './redux/actions/current_section';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import AllProjectsPage from './pages/AllProjectsPage';
 
 
 const idMap = new Map(
@@ -21,7 +17,7 @@ const idMap = new Map(
 )
 let dispatch;
 
-const x = ()=>{
+const monitorCurrentSection = ()=>{
   let sections = document.getElementsByClassName("SECTIONS")
   let sec ;
   let current_section;
@@ -29,7 +25,6 @@ const x = ()=>{
   let top = window.scrollY + 150
   let offset = 0
   let height = 0
-
 
   for( let i=0; i<size; i++){
     sec = sections[i]
@@ -45,7 +40,7 @@ const x = ()=>{
 
 }
 
-window.addEventListener('scroll', x);
+window.addEventListener('scroll', monitorCurrentSection);
 
 
 function App() {
@@ -57,13 +52,12 @@ dispatch = useDispatch();
     <>
 
     <div className={`relative	w-full h-screena min-w-[20em]  md:max-w-screen-2xl md:m-auto `}>
-      <MenuIcon />
-      <Nav />
-      <Home/>
-      <Skills/>
-      <Projects/>
-      <Education/>
-      <Contact/>
+      
+      <Routes>
+        <Route exact path='/' element={<HomePage/>}/>
+        <Route path='/all-projects' element={<AllProjectsPage/>}/>
+        <Route path='*' element={<HomePage/>}/>
+      </Routes>
 
       
     </div>

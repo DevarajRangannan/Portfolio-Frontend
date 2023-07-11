@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Act_sideNavBar } from '../redux/actions/side_nav';
 import { ReactComponent as CloseIcon } from '../asserts/close.svg';
 import {ReactComponent as Logo} from "../asserts/d-logo-blue.svg"
-
+import { Link } from 'react-router-dom';
 
 const colorWhite = "fill-white	border-white"
 const colorBlack = "fill-black	border-black"
@@ -33,8 +33,7 @@ export default function Nav() {
 
     return () => {
       scrollableDiv.removeEventListener('wheel', handleScroll);
-    scrollableDiv.addEventListener('touchmove', handleScroll);
-
+      scrollableDiv.addEventListener('touchmove', handleScroll);
     };
   }, []);
 
@@ -46,13 +45,13 @@ export default function Nav() {
     <div className={`${sideNavBar ? '-translate-x-0' : '-translate-x-full md:-translate-x-0'} ${container} ${md_container}`}>
       <div id='scrollableDiv' className={`${body}`}>
         <div className={`${nav}  ${md_nav}`}>
-
-          <a href="#home" className={`${logo} ${md_logo}`} onClick={() => closeNav()}>
-              <div className='flex items-end'>
-                <div className='w-10 h-10 mr-1'><Logo/></div>
-                <div>Portfolio</div>
-              </div>
-          </a>
+          <Link to="/" className={`${logo} ${md_logo}`} onClick={() => closeNav()}>
+            <div className='flex items-end'>
+              <div className='w-10 h-10 mr-1'><Logo/></div>
+              <div>Portfolio</div>
+            </div>
+          </Link>
+          
           
           <div className='md:flex '> 
             <div className={`${anchorContainerStyle} ${md_anchorContainerStyle}`} onClick={()=>closeNav()} >

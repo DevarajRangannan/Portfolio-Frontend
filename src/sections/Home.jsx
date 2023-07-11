@@ -29,9 +29,9 @@ export default function Home() {
 
   return (
     <>
-        <div id='home' className={`${CONTAINER} ${md_CONTAINER}`}>
+        <div id='home' className={`${CONTAINER} ${md_CONTAINER} `}>
           <div className={`${MAIN_SECTION} ${md_MAIN_SECTION}  `}>
-            <img className={`${PROFILE} ${md_PROFILE}`} src={profile} alt="profilePic" />
+            <img loading='lazy' className={`${PROFILE} ${md_PROFILE}`} src={profile} alt="profilePic" />
             <div className={`${TEXT_CONTAINER} ${md_TEXT_CONTAINER}`}>
               <div className={`${NAME} ${md_NAME}`}>Devaraj Rangannan</div>
               <div className={`${DOAMIN}, ${md_DOAMIN}`}>Full Stack Developer</div>
