@@ -6,6 +6,7 @@ import Skills from "../sections/Skills"
 import Projects from "../sections/Projects"
 import Education from "../sections/Education"
 import Contact from "../sections/Contact"
+import Footer from '../components/Footer';
 import { useSelector } from 'react-redux';
 
 let height = 0 ;
@@ -57,7 +58,7 @@ export default function HomePage() {
         <div ref={ProjectScollToRef}><Projects/></div>
         <div ref={EducationScollToRef}><Education/></div>
         <div ref={ContactScollToRef}><Contact/></div>
-        
+        <Footer/>
     </>
   )
 }
