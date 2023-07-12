@@ -1,5 +1,5 @@
 import React from 'react'
-import { CONTAINER, md_CONTAINER, TITLE, BODY_CONTAINER, EMAIL_ADDRESS, SUB_BODY_CONTAINER, LOGO_CONTAINER } from './styles/Contact'
+import { CONTAINER, md_CONTAINER, TITLE, BODY_CONTAINER, EMAIL_ADDRESS, CONTACT_NUMBER, SUB_BODY_CONTAINER, LOGO_CONTAINER } from './styles/Contact'
 
 export default function Contact() {
   return (
@@ -9,7 +9,7 @@ export default function Contact() {
 
         <div className={BODY_CONTAINER}>
             <h1 className={EMAIL_ADDRESS} >devarangan2002@gmail.com</h1>
-
+            <a href="tel:9025756510" className={CONTACT_NUMBER}>Mobile: 9025756510</a>
             <div className={SUB_BODY_CONTAINER}>
                 <a  href="https://in.linkedin.com/in/devaraj-rangannan" target="_blank" rel="noreferrer"><img src="https://devarajrangannan.github.io/Images/LinkedIn_logo.png" alt="LinkedIn_logo" className={LOGO_CONTAINER}/></a>
 

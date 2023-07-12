@@ -5,7 +5,8 @@ export const TITLE = "text-5xl font-bold text-center text-white"
 
 export const BODY_CONTAINER = "flex flex-col justify-center items-center"
 
-export const EMAIL_ADDRESS = "mt-10 md:mt-20 text-xl md:text-5xl font-bold text-center text-white"
+export const EMAIL_ADDRESS = "mt-10 md:mt-20 text-2xl md:text-5xl font-bold text-center text-white"
+export const CONTACT_NUMBER = "text-white text-xl mt-5"
 
 export const SUB_BODY_CONTAINER = "w-full  md:w-1/2 mt-10 flex justify-between"
 
