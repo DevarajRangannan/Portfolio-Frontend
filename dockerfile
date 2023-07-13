@@ -1,6 +1,6 @@
-FROM node:18-alpine
+FROM nginx:stable
 
-ENV PORT=3000
+ARG PORT=80
 
 ENV REACT_APP_BASE_URL=http://server.deva.asia/
 ENV REACT_APP_METADATA_RESUME=https://server.deva.asia/portfolio/metadata-resume
@@ -12,7 +12,11 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm install && npm install -g serve && npm run build
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && apt-get install -y nodejs && npm install && npm run build
+
+RUN mkdir /var/www/ && cp -r build /var/www/ && cp portfolio.conf /etc/nginx/conf.d/
+
+RUN rm /etc/nginx/conf.d/default.conf
 
 EXPOSE $PORT
 
