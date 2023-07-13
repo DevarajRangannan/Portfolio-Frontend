@@ -20,4 +20,4 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 EXPOSE $PORT
 
-ENTRYPOINT [ "serve", "build" ]
+ENTRYPOINT  ["nginx", "-g", "daemon off;"]
