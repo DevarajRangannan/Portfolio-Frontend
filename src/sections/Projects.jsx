@@ -78,7 +78,7 @@ export default function Projects() {
             projects.map((project, i)=>{
               return loadedImages[i]?
                 <div key={i} className={`${PROJECTS_CONTAINER}`} onMouseEnter={(e) => projectHightlight(e.target.parentElement)} onMouseLeave={(e) => { projectHightlightRemove(e.target.parentElement) }} onClick={(e) => { projectHightlightOnTouch(e.target.parentElement) }}>
-                  <a href={projects[1].projectLink} target='_blank' rel="noreferrer">
+                  <a href={projects[i].projectLink} target='_blank' rel="noreferrer">
                     <div className={`${PROJECT_POD}`}>
                       <img className={` ${PROJECT_POD}`} src={project.imageURL} alt={`Project-${i+1}`} />
                       <div className={`${PROJECT_POD_IMAGE_OVERLAY}`}>View Project</div>
