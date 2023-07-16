@@ -1,4 +1,4 @@
-export const CONTAINER = "pt-5 relative md:scroll-mt-16"
+export const CONTAINER = "SECTIONS pt-5 relative md:scroll-mt-16"
 export const md_CONTAINER = " "
 
 export const TITLE = "text-5xl font-bold text-center"
