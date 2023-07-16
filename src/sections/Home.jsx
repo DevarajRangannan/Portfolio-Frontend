@@ -35,9 +35,11 @@ export default function Home() {
             <div className={`${TEXT_CONTAINER} ${md_TEXT_CONTAINER}`}>
               <div className={`${NAME} ${md_NAME}`}>Devaraj Rangannan</div>
               <div className={`${DOAMIN}, ${md_DOAMIN}`}>Full Stack Developer</div>
-              <a href={resumeURL} target='blank'>
-                <button className={`${RESUME_BTN} ${md_RESUME_BTN}`}>{resumeURL===""?"Loading...":"Resume Download"}</button>
-              </a>
+              <div className='relative md:mb-20  z-10  bg-re-700 '>
+                <a href={resumeURL} target='blank' className='md:absolute  '>
+                  <button className={`${RESUME_BTN} ${md_RESUME_BTN}`}>{resumeURL===""?"Loading...":"Resume Download"}</button>
+                </a>
+              </div>
             </div>
           </div>
             <div className={`${WAVE} ${md_WAVE}`}>

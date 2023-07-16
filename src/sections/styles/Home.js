@@ -16,8 +16,8 @@ export const md_NAME = "md:text-5xl"
 export const DOAMIN = "text-xl font-bold mt-2 mb-2  "
 export const md_DOAMIN = "lg:text-3xl md:my-4 md:my-4"
 
-export const RESUME_BTN = "w-44 p-3 text-black font-semibold bg-white rounded-lg mb-10  hover:bg-gray-300   "
+export const RESUME_BTN = "w-44 p-3 text-black font-semibold bg-white rounded-lg hover:bg-gray-300   "
 export const md_RESUME_BTN = "md:mb-0"
 
 export const WAVE = "w-full bottom-0 fill-white"
-export const md_WAVE = "md:absolute"
+export const md_WAVE = "md:absolute "

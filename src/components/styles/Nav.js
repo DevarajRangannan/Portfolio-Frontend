@@ -1,4 +1,4 @@
-export const container = " z-10 fixed top-0 w-full h-full bg-gray-500/50 transition "
+export const container = " z-20 fixed top-0 w-full h-full bg-gray-500/50 transition "
 export const md_container = "md:m-auto md:h-16 md:max-w-screen-2xl "
 
 export const body = " w-full h-full flex "
