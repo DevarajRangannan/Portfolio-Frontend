@@ -10,7 +10,7 @@ export default function Education() {
               <div className={EDUCATION_CONTAINER}>
                   <div className={COURSE_CONTAINER}>
                       <h2 className={COURSE_TITLE}>DEGREE</h2>
-                      <h3 className={COURSE_DES}>Bachelor Of Cumputer Application ( 2020-2023 )</h3>
+                      <h3 className={COURSE_DES}>Bachelor Of Computer Application ( 2020-2023 )</h3>
                       <h4 className={COURSE_MARK}>Mark : 75%</h4>
                   </div>
 
