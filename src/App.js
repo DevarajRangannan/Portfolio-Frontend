@@ -51,7 +51,7 @@ dispatch = useDispatch();
   return (
     <>
 
-    <div className={`relative	w-full h-screena min-w-[20em]  md:max-w-screen-2xl md:m-auto `}>
+    <div className={`relative	w-full h-screena min-w-[20em]  md:max-w-screen-2xl md:m-auto selection:bg-gray-700 selection:text-white`}>
       
       <Routes>
         <Route exact path='/' element={<HomePage/>}/>
