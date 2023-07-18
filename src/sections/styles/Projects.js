@@ -1,4 +1,4 @@
-export const CONTAINER = "scroll-mt-16 SECTIONS w-full bg-[#2E2E2E] "
+export const CONTAINER = "SECTIONS md:scroll-mt-16 w-full bg-[#2E2E2E] "
 
 export const TITLE = "flex items-center justify-center text-5xl text-white font-bold pt-5"
 export const MAIN_SECTION ="grid md:grid-cols-2 lg:grid-cols-3 p-10 gap-10 "
